@@ -11,7 +11,7 @@ import java.util.List;
 public class Camper {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @NotNull(message = "The name cannot be null")
     @NotBlank(message = "The name cannot be blank")
@@ -38,5 +38,9 @@ public class Camper {
         this.age = age;
         this.username = username;
         this.password = password;
+    }
+
+    public Camper() {
+
     }
 }
