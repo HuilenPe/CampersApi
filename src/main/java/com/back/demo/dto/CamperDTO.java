@@ -3,7 +3,7 @@ package com.back.demo.dto;
 import jakarta.validation.constraints.*;
 
 public class CamperDTO {
-    @NotNull
+    //@NotNull
     private Long id;
     @NotNull
     @NotBlank
